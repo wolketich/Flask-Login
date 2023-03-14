@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"inputs": [
+	  {
+		"id": "commitDay",
+		"type": "promptString",
+		"description": "Enter the commit day (DD):",
+		"default": ""
+	  }
+	],
+	"tasks": [
+	  {
+		"type": "shell",
+		"label": "Commit",
+		"command": "../gd", // just the script name here
+		"args": [
+		  "${input:commitDay}/03/2023" // here we reference the input
+		],
+		"problemMatcher": [],
+		"group": {
+		  "kind": "build",
+		  "isDefault": true  // makes it the default build task
+		}
+	  }
+	]
+  }
