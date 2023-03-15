@@ -7,3 +7,12 @@ import re
 
 
 app = Flask(__name__)
+
+app.secret_key = 'vladislav_Wolketich'
+
+app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = 'Pass123!'
+app.config['MYSQL_DB'] = 'main_db'
+
+mysql = MySQL(app)
