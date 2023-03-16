@@ -36,3 +36,10 @@ def login():
         else:
             msg = 'Incorrect username / password !'
     return render_template('login.html', msg = msg)
+
+@app.route('/logout')
+def logout():
+	session.pop('loggedin', None)
+	session.pop('id', None)
+	session.pop('username', None)
+	return redirect(url_for('login'))
