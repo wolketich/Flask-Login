@@ -19,7 +19,7 @@ mysql = MySQL(app)
 
 @app.route('/')
 @app.route('/login', methods =['GET', 'POST'])
-def login():1
+def login():
     msg = ''
     if request.method == 'POST' and 'username' in request.form and 'password' in request.form:
         username = request.form['username']
