@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Flask
+instance/
+*.pyc
+*.pyo
+
+# MySQL
+*.sql
+*.sql.gz
+*.sql.bz2
+*.sql.xz
+*.sql.7z
+*.dump
+*.dmp
+*.tgz
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.zip
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Virtual environment
+.venv/
